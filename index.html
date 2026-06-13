@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ranjith Kumar A — Freelance Web & App Developer crafting modern digital experiences.">
+<meta name="keywords" content="Ranjith Kumar, Freelance Developer, Web Developer, React, Firebase">
+<meta name="author" content="Ranjith Kumar A">
+<title>Ranjith Kumar A · Freelancer</title>
+<link rel="icon" href="freelance.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="preloader" aria-label="Loading website">
+  <div class="loader-content-wrap">
+    <div class="loader-mark">
+      <img src="rkpl.png" alt="Ranjith Kumar A">
+    </div>
+    <div class="loader-logo">Ranjith Kumar A</div>
+    <div class="loader-tagline">Freelance Web Developer</div>
+    <div class="loader-progress-container">
+      <div class="loader-line-track">
+        <div class="loader-line-fill" id="loaderFill"></div>
+      </div>
+      <div class="loader-percentage" id="loaderPercent">0%</div>
+    </div>
+  </div>
+</div>
+<div id="prog"></div>
+<div id="mglow"></div>
+<div id="particles-js"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#home" class="nav-logo">R<em>K</em></a>
+  <ul class="nav-links">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact" class="nav-cta">Freelance Project</a></li>
+  </ul>
+  <button class="hamburger" id="hbg" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mob-menu" id="mob">
+  <button class="close-mob" id="closeMob" aria-label="Close menu"><i class="fa fa-times"></i></button>
+  <a href="#home" onclick="cMob()">Home</a>
+  <a href="#work" onclick="cMob()">Work</a>
+  <a href="#services" onclick="cMob()">Services</a>
+  <a href="#skills" onclick="cMob()">Skills</a>
+  <a href="#testimonials" onclick="cMob()">Reviews</a>
+  <a href="#contact" onclick="cMob()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-wrap">
+    <div class="hero-content">
+      <div class="hero-eyebrow">Available for freelance work</div>
+      <h1 class="hero-name">Ranjith <em>Kumar</em> A</h1>
+      <div class="hero-role">
+        <div class="typed-wrap"><span id="typed"></span><span class="typed-cur">|</span></div>
+      </div>
+      <p class="hero-desc">Passionate freelance developer specializing in modern websites and web applications. I focus on creating responsive, attractive and user-friendly experiences.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary"><i class="fa fa-paper-plane"></i> Start Freelance Project</a>
+        <a href="#work" class="btn-ghost"><i class="fa fa-eye"></i> View Work</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-val">6<span>+</span></div><div class="stat-lbl">Projects</div></div>
+        <div><div class="stat-val">100<span>%</span></div><div class="stat-lbl">Satisfaction</div></div>
+        <div><div class="stat-val">2<span>+</span></div><div class="stat-lbl">Years Exp</div></div>
+      </div>
+    </div>
+    <div class="profile-block" style="animation:float 5s ease-in-out infinite 1s;">
+      <div class="profile-frame">
+        <div class="profile-inner">
+          <img src="rk.jpg" alt="Ranjith Kumar A" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block;">
+        </div>
+        <div class="profile-badge pb-left"><i class="fa fa-code"></i>Full Stack Dev</div>
+        <div class="profile-badge pb-right"><i class="fa fa-star"></i>Freelancer</div>
+      </div>
+      <div class="decor-line"></div>
+    </div>
+  </div>
+  <!-- <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-track"></div>
+  </div> -->
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <div class="sec-head inner" data-aos="fade-up">
+    <span class="sec-kicker">Selected Work</span>
+    <h2 class="sec-title">Recent Projects</h2>
+    <div class="sec-rule"></div>
+    <p class="sec-sub">Real-world projects designed and built for clients across various industries.</p>
+  </div>
+  <div class="inner">
+    <div class="proj-grid">
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="proj-img-wrap">
+          <img src="workimg/bts.png" alt="Best Tailor Shop" class="proj-img" loading="lazy">
+          <div class="proj-shade"></div>
+          <span class="proj-chip">Web App</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Best Tailor Shop</h3>
+          <p class="proj-desc">Full-featured tailor shop app with appointment booking, measurements tracking, and order management.</p>
+          <div class="proj-tags"><span class="chip">HTML/CSS/JS</span><span class="chip">Firebase</span><span class="chip">Web App</span></div>
+          <a href="https://besttailorshop.web.app/" target="_blank" class="proj-link">Visit Project <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="proj-img-wrap">
+          <img src="workimg/chc.png" alt="Comfort Healthcare" class="proj-img" loading="lazy">
+          <div class="proj-shade"></div>
+          <span class="proj-chip">Website</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Comfort Healthcare</h3>
+          <p class="proj-desc">Professional healthcare website with service listings, doctor profiles, and appointment interface.</p>
+          <div class="proj-tags"><span class="chip">HTML</span><span class="chip">CSS/JS</span><span class="chip">Firebase</span></div>
+          <a href="https://comforthealthcare.netlify.app/" target="_blank" class="proj-link">Visit Project <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="proj-img-wrap">
+          <img src="workimg/dts.png" alt="Deepam Tailors" class="proj-img" loading="lazy">
+          <div class="proj-shade"></div>
+          <span class="proj-chip">Web App & Site</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Deepam Women's Tailor</h3>
+          <p class="proj-desc">Combined web application and marketing site for a women's tailoring business with online catalogue.</p>
+          <div class="proj-tags"><span class="chip">HTML/CSS/JS</span><span class="chip">Firebase</span><span class="chip">Bootstrap</span></div>
+          <a href="https://deepamtailors.netlify.app/" target="_blank" class="proj-link">Visit Project <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="proj-img-wrap">
+          <img src="workimg/mbp.png" alt="Mayil Beauty" class="proj-img" loading="lazy">
+          <div class="proj-shade"></div>
+          <span class="proj-chip">Website</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Mayil Beauty Parlour</h3>
+          <p class="proj-desc">Elegant parlour website with service menu, gallery, and appointment booking with premium visual identity.</p>
+          <div class="proj-tags"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JS</span></div>
+          <a href="https://mayilbeautyparlour.netlify.app/" target="_blank" class="proj-link">Visit Project <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="proj-img-wrap">
+          <img src="workimg/sdc.png" alt="Diabetic Clinic" class="proj-img" loading="lazy">
+          <div class="proj-shade"></div>
+          <span class="proj-chip">Web App</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Senthil Diabetic Clinic</h3>
+          <p class="proj-desc">Medical web app for a diabetic clinic with patient management, scheduling, and health records.</p>
+          <div class="proj-tags"><span class="chip">HTML/CSS</span><span class="chip">JS/React</span><span class="chip">Firebase</span><span class="chip">Web App</span></div>
+<a href="#" class="proj-link" style="opacity:.6;pointer-events:none;">
+     Confidential Project <i class="fa fa-lock"></i>
+</a>
+        </div>
+      </div>
+
+      <div class="proj-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="proj-img-wrap">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600&q=80" alt="Coding Hub" class="proj-img" loading="lazy">
+          <div class="proj-shade"></div>
+          <span class="proj-chip">Full Stack</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Coding Practice Platform</h3>
+          <p class="proj-desc">Full-stack platform for learners to practice coding problems, follow tutorials, and track progress.</p>
+          <div class="proj-tags"><span class="chip">HTML/CSS/JS</span><span class="chip">FireBase</span><span class="chip">Razorpay</span></div>
+          <a href="https://mcodinghub.netlify.app/" target="_blank" class="proj-link">Visit Project <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="sec-head inner" data-aos="fade-up">
+    <span class="sec-kicker">What I Offer</span>
+    <h2 class="sec-title">Services</h2>
+    <div class="sec-rule"></div>
+    <p class="sec-sub">End-to-end web development tailored to your goals and audience.</p>
+  </div>
+  <div class="svc-grid">
+    <div class="svc-card svc-web" data-aos="fade-up" data-aos-delay="0">
+      <div class="svc-icon"><i class="fa fa-globe"></i></div>
+      <h3 class="svc-title">Website Development</h3>
+      <p class="svc-desc">Responsive business websites that build trust, explain your services clearly, and bring enquiries online.</p>
+    </div>
+    <div class="svc-card svc-app" data-aos="fade-up" data-aos-delay="80">
+      <div class="svc-icon"><i class="fa fa-laptop-code"></i></div>
+      <h3 class="svc-title">Web App Development</h3>
+      <p class="svc-desc">Custom web apps with dashboards, booking flows, authentication, databases, and useful automation.</p>
+    </div>
+    <div class="svc-card svc-digital" data-aos="fade-up" data-aos-delay="160">
+      <div class="svc-icon"><i class="fa fa-chart-line"></i></div>
+      <h3 class="svc-title">Business Digitalization</h3>
+      <p class="svc-desc">Move manual business work into simple digital systems for orders, records, customers, and daily operations.</p>
+    </div>
+    <div class="svc-card svc-ideas" data-aos="fade-up" data-aos-delay="240">
+      <div class="svc-icon"><i class="fa fa-lightbulb"></i></div>
+      <h3 class="svc-title">Tech Ideas for Business</h3>
+      <p class="svc-desc">Practical technology ideas to improve sales, save time, and create better customer experiences.</p>
+    </div>
+    <!-- <div class="svc-card svc-redesign" data-aos="fade-up" data-aos-delay="320">
+      <div class="svc-icon"><i class="fa fa-pen-ruler"></i></div>
+      <h3 class="svc-title">Website Redesign</h3>
+      <p class="svc-desc">Upgrade old websites with a cleaner design, better mobile layout, faster loading, and stronger content flow.</p>
+    </div> -->
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sec-head inner" data-aos="fade-up">
+    <span class="sec-kicker">Technical Expertise</span>
+    <h2 class="sec-title">Skills & Tools</h2>
+    <div class="sec-rule"></div>
+    <p class="sec-sub">Technologies I work with daily to build modern digital products.</p>
+  </div>
+  <div class="skills-wrap inner">
+    <div class="skill-icons-grid" data-aos="fade-right">
+      <div class="sk-card sk-html" data-aos="zoom-in" data-aos-delay="0"><span class="ic"><i class="fab fa-html5"></i></span><div class="sk-name">HTML5</div></div>
+      <div class="sk-card sk-css"  data-aos="zoom-in" data-aos-delay="40"><span class="ic"><i class="fab fa-css3-alt"></i></span><div class="sk-name">CSS3</div></div>
+      <div class="sk-card sk-js"   data-aos="zoom-in" data-aos-delay="80"><span class="ic"><i class="fab fa-js-square"></i></span><div class="sk-name">JS</div></div>
+      <div class="sk-card sk-react" data-aos="zoom-in" data-aos-delay="120"><span class="ic"><i class="fab fa-react"></i></span><div class="sk-name">React</div></div>
+      <div class="sk-card sk-node"  data-aos="zoom-in" data-aos-delay="160"><span class="ic"><i class="fab fa-node-js"></i></span><div class="sk-name">Node.js</div></div>
+      <div class="sk-card sk-boot"  data-aos="zoom-in" data-aos-delay="200"><span class="ic"><i class="fab fa-bootstrap"></i></span><div class="sk-name">Bootstrap</div></div>
+      <div class="sk-card sk-fb"    data-aos="zoom-in" data-aos-delay="240"><span class="ic"><i class="fas fa-fire"></i></span><div class="sk-name">Firebase</div></div>
+      <div class="sk-card sk-py"    data-aos="zoom-in" data-aos-delay="280"><span class="ic"><i class="fab fa-python"></i></span><div class="sk-name">Python</div></div>
+      <div class="sk-card sk-java"  data-aos="zoom-in" data-aos-delay="320"><span class="ic"><i class="fab fa-java"></i></span><div class="sk-name">Java</div></div>
+      <div class="sk-card sk-git"   data-aos="zoom-in" data-aos-delay="360"><span class="ic"><i class="fab fa-git-alt"></i></span><div class="sk-name">Git</div></div>
+      <div class="sk-card sk-web"   data-aos="zoom-in" data-aos-delay="400"><span class="ic"><i class="fas fa-code"></i></span><div class="sk-name">Web Dev</div></div>
+      <div class="sk-card sk-app"   data-aos="zoom-in" data-aos-delay="440"><span class="ic"><i class="fas fa-layer-group"></i></span><div class="sk-name">App Dev</div></div>
+      <div class="sk-card sk-ai" data-aos="zoom-in" data-aos-delay="480"><span class="ic brand-ic"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/ChatGPT-Logo.svg" alt=""></span><div class="sk-name">ChatGPT</div></div>
+      <div class="sk-card sk-claude" data-aos="zoom-in" data-aos-delay="520"><span class="ic brand-ic"><img src="https://unpkg.com/@lobehub/icons-static-svg@latest/icons/claude-color.svg" alt=""></span><div class="sk-name">Claude</div></div>
+      <div class="sk-card sk-ag" data-aos="zoom-in" data-aos-delay="560"><span class="ic brand-ic"><img src="https://unpkg.com/@lobehub/icons-static-svg@latest/icons/antigravity-color.svg" alt=""></span><div class="sk-name">Antigravity</div></div>
+      <div class="sk-card sk-vscode" data-aos="zoom-in" data-aos-delay="600"><span class="ic brand-ic"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt=""></span><div class="sk-name">VS Code</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="sec-head inner" data-aos="fade-up">
+    <span class="sec-kicker">Client Feedback</span>
+    <h2 class="sec-title">Testimonials</h2>
+    <div class="sec-rule"></div>
+    <p class="sec-sub">What my clients say about working together.</p>
+  </div>
+  <div class="swiper" data-aos="fade-up">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="tcard">
+          <div class="tstars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+          <p class="ttext">"Ranjith built an incredible web app for our tailor shop. The booking system works flawlessly and our customers love how easy it is to use. He delivered exactly what we needed, on time."</p>
+          <div class="tauthor"><div class="tav">BT</div><div><div class="tname">Best Tailor Shop</div><div class="trole">Client Review</div></div></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="tcard">
+          <div class="tstars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+          <p class="ttext">"Our healthcare website looks completely professional now. Patients frequently compliment how easy it is to find information and book appointments. Ranjith was responsive and delivered excellent quality."</p>
+          <div class="tauthor"><div class="tav">CH</div><div><div class="tname">Comfort Healthcare</div><div class="trole">Client Review</div></div></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="tcard">
+          <div class="tstars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+          <p class="ttext">"Our web application transformed how we manage orders and customers. The design is elegant, the features are exactly what we needed, and Ranjith guided us through every step. Highly recommend him."</p>
+          <div class="tauthor"><div class="tav">DT</div><div><div class="tname">Deepam Women's Tailor</div><div class="trole">Client Review</div></div></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="tcard">
+          <div class="tstars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i></div>
+          <p class="ttext">"The website perfectly captures our brand identity. It's beautiful, loads fast, and has brought us new customers who found us online. The investment was absolutely worth every rupee."</p>
+          <div class="tauthor"><div class="tav">MB</div><div><div class="tname">Mayil Beauty Parlour</div><div class="trole">Client Review</div></div></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="tcard">
+          <div class="tstars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+          <p class="ttext">"The Coding Hub platform is exactly what our students needed. Clean, intuitive, and the full-stack architecture is solid. Ranjith is one of the most dedicated developers I've worked with."</p>
+          <div class="tauthor"><div class="tav">MH</div><div><div class="tname">MCoding Hub</div><div class="trole">Client Review</div></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sec-head inner" data-aos="fade-up">
+    <span class="sec-kicker">Get In Touch</span>
+    <h2 class="sec-title">Let's Work Together</h2>
+    <div class="sec-rule"></div>
+    <p class="sec-sub">Have a project in mind? Let's create something outstanding together.</p>
+  </div>
+  <div class="contact-grid inner">
+    <div class="cinfo" data-aos="fade-right">
+      <p class="cinfo-intro">"Great websites start with a conversation. Reach out and let's talk about your idea."</p>
+      <a href="mailto:ranjithkumara.tech@gmail.com" class="ccard email">
+        <div class="ccard-icon"><i class="fa fa-envelope"></i></div>
+        <div><div class="ccard-lbl">Email</div><div class="ccard-val">ranjithkumara.tech@gmail.com</div></div>
+      </a>
+      <a href="tel:6379648721" class="ccard">
+        <div class="ccard-icon"><i class="fa fa-phone"></i></div>
+        <div><div class="ccard-lbl">Phone</div><div class="ccard-val">+91 63796 48721</div></div>
+      </a>
+      <a href="https://wa.me/916379648721" target="_blank" class="ccard whatsapp">
+        <div class="ccard-icon"><i class="fab fa-whatsapp"></i></div>
+        <div><div class="ccard-lbl">WhatsApp</div><div class="ccard-val">+91 63796 48721</div></div>
+      </a>
+      <div class="socials">
+        <a href="https://github.com/Ranjith2703" target="_blank" class="soc github" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ranjith-ak37/" target="_blank" class="soc linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:ranjithkumara.tech@gmail.com" class="soc mail" title="Email"><i class="fa fa-envelope"></i></a>
+        <a href="https://wa.me/916379648721" target="_blank" class="soc whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="cform" data-aos="fade-left">
+      <div id="fmain">
+        <h3 class="cform-title">Send a Message</h3>
+        <p class="cform-sub">I'll respond within 24 hours.</p>
+        <div class="fg-row">
+          <div class="fg"><label>Name</label><input type="text" id="fn" placeholder="Your full name"></div>
+          <div class="fg"><label>Email</label><input type="email" id="fe" placeholder="your@email.com"></div>
+        </div>
+        <div class="fg"><label>Subject</label><input type="text" id="fs" placeholder="Project inquiry"></div>
+        <div class="fg"><label>Message</label><textarea id="fm" placeholder="Tell me about your project…"></textarea></div>
+        <button class="btn-send" onclick="sendForm()"><i class="fa fa-paper-plane"></i> Send Message</button>
+      </div>
+      <div class="fsuccess" id="fsuc">
+        <i class="fa fa-check-circle"></i>
+        <h3>Message Sent!</h3>
+        <p>Thank you for reaching out. I'll be in touch within 24 hours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-inner">
+    <div class="ft-logo">Freelance <em>Web</em> Developer</div>
+    <p class="ft-copy">&copy; 2026 <a href="https://ranjithak.netlify.app/" target="_blank" rel="noopener">Ranjith Kumar A</a> · All rights reserved.</p>
+    <div style="display:flex;gap:.6rem;">
+      <a href="https://github.com/Ranjith2703" target="_blank" class="soc github"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ranjith-ak37/" target="_blank" class="soc linkedin"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/916379648721" target="_blank" class="wa-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Top"><i class="fa fa-arrow-up"></i></button>
+
+<!-- SCRIPTS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
